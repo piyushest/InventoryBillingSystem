@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="InventoryBillingSystem">
+	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+	<class>model.Adminregistereddistributor</class>
+	<class>model.Adminregistration</class>
+	<class>model.Adminretailerregistration</class>
+	<class>model.Areadistributor</class>
+	<class>model.AreadistributorPK</class>
+	<class>model.Billinformation</class>
+	<class>model.Inventory</class>
+	<class>model.InventoryPK</class>
+	<class>model.Inventoryrequest</class>
+	<class>model.InventoryrequestPK</class>
+	<class>model.Orderdetail</class>
+	<class>model.Orderpricedetail</class>
+	<class>model.OrderpricedetailPK</class>
+	<class>model.Order</class>
+	<class>model.Requestdetail</class>
+	<class>model.RequestdetailPK</class>
+	<class>model.Distributorlogin</class>
+    <properties>
+	  <property name="eclipselink.jdbc.password" value="Mydaddyisgr8"/>
+	  <property name="eclipselink.jdbc.user" value="root"/>
+	  <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+	  <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost/inventorybillingsystem"/>
+	  <!--	property name="eclipselink.ddl-generation" 
+value="drop-and-create-tables"/-->
+	  <property name="eclipselink.logging.level" value="INFO"/>
+    </properties>
+	
+	</persistence-unit>
+</persistence>
